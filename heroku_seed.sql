@@ -1,0 +1,15 @@
+
+DROP TABLE IF EXISTS booSpace;
+
+CREATE TABLE booSpace (
+id SERIAL PRIMARY KEY,
+toName VARCHAR NULL,
+fromName VARCHAR NULL, 
+personalNote VARCHAR NULL, 
+img_url VARCHAR NULL, 
+title VARCHAR NULL, 
+horoscropeSign VARCHAR NULL,
+date  TIMESTAMP NULL DEFAULT NOW(),
+spaceDate TIMESTAMP NOT NULL DEFAULT NOW(),
+description VARCHAR NULL
+);
